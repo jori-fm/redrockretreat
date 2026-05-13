@@ -194,11 +194,10 @@ input[type="radio"] + label {
     margin: 0;
 	}
     nav { float: none; width: auto; }
-    nav ul { 
-        display: block; /* Changes from flex to block to stack them */
+    nav ul { display: block; /* Changes from flex to block to stack them */
         padding: 0; 
         text-align: center; 
-    }
+	}
     nav li { 
         border-bottom: 1px solid #E9D7C3; /* Adds a separator between stacked links */
         margin: 0;
