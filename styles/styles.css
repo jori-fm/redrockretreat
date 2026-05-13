@@ -1,0 +1,202 @@
+
+/* ensure HTML5 elements display correctly in older browsers */
+header, nav, main, footer { 
+    display: block; 
+}
+
+/* Base page styling: match canyon colors */
+body { 
+    background-color: #2D232E; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Main container: Centered and light background */
+#wrapper { 
+    width: 960px;
+    margin: auto;
+    background-color: #FDF5E6; /* Old Lace / Cream */
+    color: #4A2C2A; /* Deep canyon red text */
+    box-shadow: 0 0 15px #000000;
+}
+
+/* Header styling -  featuring logo and typography */
+h1 { 
+    background-image: url(../images/logo.gif);
+    background-repeat: no-repeat;
+    background-color: #FDF5E6;
+    height: 120px;
+    font-family: Georgia, serif;
+    font-size: 4em;
+    padding-left: 210px;
+    padding-top: 30px;
+    text-shadow: 2px 2px 4px #C08081; /* pink shadow */
+    margin: 0;
+    color: #8B0000; /* Dark Red */
+}
+
+/* Sidebar nav layout */
+nav { 
+    padding-top: 20px;
+    float: left;
+    width: 200px; 
+}
+
+/* List styling for navigation */
+nav ul { 
+    list-style-type: none; 
+    padding-left: 15px;
+}
+
+nav li { 
+    padding: 8px 0;
+    border-bottom: 1px solid #E9D7C3;
+}
+
+/* Navigation Link States */
+/* Enhanced Navigation Styling */
+nav a { 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: all 0.4s ease; /* smooth transition for hover effects */
+    display: block; /* makes the whole line clickable */
+    padding: 5px;
+}
+
+nav a:link { color: #8B4513; }    
+nav a:visited { color: #5D4037; }
+
+/* Pseudo-class for a polished look */
+nav a:hover, nav a:focus { 
+    color: #D87093; 
+    background-color: #FDF5E6; 
+    padding-left: 15px; /* slide effect on hover */
+    text-decoration: underline;
+}
+
+/* Main content area styling */
+main { 
+    background-color: #FFFFFF;
+    margin-left: 200px;
+    padding: 20px 30px;   
+    min-height: 400px;
+}
+
+/* Typography styles for Headings,  paragraphs, and lists within Main */
+main h2 { 
+    color: #B22222; /* Firebrick Red */
+    border-bottom: 2px solid #F08080;
+    padding-bottom: 5px;
+}
+
+main p { 
+    line-height: 1.8; 
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+/* Styling for lists within the main content */
+main ul {
+    margin-left: 20px;
+    color: #4A2C2A;
+}
+
+/* Image styling -  floats to the right with a themed border */
+main img { 
+    float: right;
+    margin: 10px 0 20px 20px;
+    border: 5px solid #FDF5E6;
+    box-shadow: 3px 3px 8px #999;
+}
+
+/* footer styling -  Centered at bottom, cleared of floats */
+footer { 
+    clear: both;
+    background-color: #FDF5E6;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+    border-top: 2px solid #E9D7C3;
+}
+/* table Styling */
+table { 
+    border: 1px solid #4A2C2A;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+th, td { 
+    border: 1px solid #4A2C2A;
+    padding: 10px;
+    text-align: left;
+}
+th { background-color: #E9D7C3; }
+
+/* form style */
+label { display: block; margin-top: 10px; font-weight: bold; }
+input, textarea { margin-bottom: 10px; }
+
+/* button alignment for contact fix */
+input[type="radio"] {
+    display: inline;
+    width: auto;
+    margin-right: 5px;
+}
+
+/* make sure buttons stay on same line */
+input[type="radio"] + label {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* map styling, which is responsive */
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 */
+    position: relative;
+    height: 0;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 2px solid #4A2C2A;
+}
+
+/* ensure the text in the footer is clear */
+#last-updated {
+    font-size: 0.8em;
+    color: #5D4037;
+    margin-top: 5px;
+}
+
+/* responsive media for mobile devices */
+@media (max-width: 800px) {
+    #wrapper { width: 100%; box-shadow: none; }
+    header { height: auto; padding-left: 20px; }
+    h1 { 
+    background-image: url(../images/mobile_icon.png);
+    background-repeat: no-repeat;
+    background-size: auto 80px; 
+    background-position: 10px center; 
+    padding-left: 100px; 
+    height: 120px;
+    font-family: Georgia, serif;
+    font-size: 3em; 
+    display: flex;
+    align-items: center; 
+    color: #8B0000;
+    margin: 0;
+	}
+    nav { float: none; width: auto; }
+    nav ul { padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+    nav li { border: none; margin: 5px; }
+    main { margin-left: 0; padding: 10px; }
+    footer { margin-left: 0; }
+    main img { float: none; width: 100%; height: auto; display: block; margin: 10px 0; }
+}

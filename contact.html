@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Red Rock Retreat | Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Red Rock Retreat is a premier Bed and Breakfast in the Texas panhandle, offering luxury suites and guided canyon experiences.">
+<link href="styles/styles.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <h1>Red Rock Retreat</h1>
+  </header>
+  <nav>
+  <ul> 
+    <li><a href="index.html">Home</a></li>
+	<li><a href="rooms/canyon_suite.html">Canyon Suite</a></li>
+	<li><a href="rooms/desert_rose.html">Desert Rose Room</a></li>
+	<li><a href="events/weekend.html">Weekend Events</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <main>
+  <h2>Contact Us</h2>
+  <p>Have questions about Red Rock? Fill out the form below and our team will get back to you shortly.</p>
+  
+  <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+    <label for="myFName">First Name:</label>
+    <input type="text" name="myFName" id="myFName" required>
+
+    <label for="myEmail">Email:</label>
+    <input type="email" name="myEmail" id="myEmail" required>
+
+    <p>How did you hear about us?</p>
+    <input type="radio" name="refer" id="google" value="google">
+    <label for="google">Google</label>
+    <input type="radio" name="refer" id="social" value="social">
+    <label for="social">Social Media</label>
+    <input type="radio" name="refer" id="friend" value="friend">
+    <label for="friend">Word of Mouth</label>
+
+    <label for="myComments">Comments:</label>
+    <textarea name="myComments" id="myComments" rows="4" cols="30"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+  <h3>Find Us</h3>
+	<div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104052.7303102434!2d-101.74853032549237!3d34.915291993297745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8701633666f125a9%3A0x6a0531c778403303!2sPalo%20Duro%20Canyon%20State%20Park!5e0!3m2!1sen!2sus!4v1714000000000!5m2!1sen!2sus" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+</main>
+  <footer>
+    <p>Copyright &copy; 2026<br>
+    <a href="mailto:pgerman@amarillocollege.com">Pedro German</a></p>
+    <p id="last-updated"></p> </footer>
+</div>
+<script>
+    // JavaScript to display the date the document was last modified
+    document.getElementById("last-updated").innerHTML = "Last Updated: " + document.lastModified;
+</script>
+</body>
+</html>
